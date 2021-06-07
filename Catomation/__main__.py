@@ -4,7 +4,7 @@ import cv2
 from detect_cat import detect_cat
 
 # Load image
-image = cv2.imread('pic2.jpg', 0)
+image = cv2.imread('assets/training-cat-face.jpg', 0)
 
 # Detection
 cat_detected, annotated_image = detect_cat(image)

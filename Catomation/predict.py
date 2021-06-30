@@ -1,3 +1,12 @@
+"""
+This library and script provide the function `predict(image) -> String`
+that accepts an image of an object and returns the predicted class.
+It uses the model at `assets/models/cropped.h5` and hard-coded category names.
+
+When invoked directly as a script it predicts the class of the images
+located in `assets/manual_validation`.
+"""
+
 import os
 
 import numpy as np

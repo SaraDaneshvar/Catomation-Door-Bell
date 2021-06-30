@@ -1,3 +1,13 @@
+"""
+This script uses images in subfolders of `assets/train_cropped` to train a
+classification model. The script outputs the resulting model at
+`assets/models/latest.h5`. The training is interrupted early if the validation
+loss stops improving. A performance graph is generated and displayed in a
+window when possible, otherwise it is saved locally and the web server folder.
+If the generated model is satisfactory, it should be moved to
+`assets/model/cropped.h5` for use by other tools.
+"""
+
 import os
 import sys
 import pathlib

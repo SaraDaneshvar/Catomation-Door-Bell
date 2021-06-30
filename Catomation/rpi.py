@@ -1,3 +1,12 @@
+"""
+This script detects cats from a Raspberry Pi host with a camera.
+It detects movement (using differential images and OpenCV) and
+predicts what is the object in the movement area (using a custom
+TensorFlow model). If the detected object is a cat, the full
+camera image is saved to a web server. In all cases, the cropped
+image is set aside for future training.
+"""
+
 from datetime import datetime
 import io
 import time

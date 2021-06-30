@@ -2,12 +2,17 @@
 
 ### Package version
 
-Python packages and versions are listed in `requirements.txt`. Install them for Raspberry Pi with the following:
+Python packages and versions are listed in `requirements.txt`. Install them with the following:
 ```
 virtualenv env
 source env/bin/activate
-pip3 install https://github.com/bitsy-ai/tensorflow-arm-bin/releases/download/v2.4.0-rc2/tensorflow-2.4.0rc2-cp37-none-linux_armv7l.whl`
 pip3 install -r requirements.txt
+```
+
+Install additionnal packages on Raspeberry Pi OS:
+```
+pip3 install https://github.com/bitsy-ai/tensorflow-arm-bin/releases/download/v2.4.0-rc2/tensorflow-2.4.0rc2-cp37-none-linux_armv7l.whl
+pip3 install picamera==1.13
 ```
 
 ### Raspberry Pi system config
